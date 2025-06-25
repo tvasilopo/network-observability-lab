@@ -3,7 +3,7 @@ import json
 
 
 with gNMIclient(
-    target=("ceos-01", 50051), username="netobs", password="netobs123", insecure=True
+    target=("198.51.100.11", 50051), username="netobs", password="netobs123", insecure=True
 ) as gc:
     result = gc.capabilities()
 

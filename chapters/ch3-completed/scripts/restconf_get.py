@@ -5,7 +5,7 @@ import json
 # Disable the warning for not certificate verification
 requests.packages.urllib3.disable_warnings()
 
-router = "ceos-01"
+router = "198.51.100.11"
 restconf_port = 5900
 
 result = requests.get(

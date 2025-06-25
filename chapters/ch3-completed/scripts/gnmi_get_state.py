@@ -4,10 +4,12 @@ import json
 paths = ['openconfig:interfaces']
 
 with gNMIclient(
-    target=("ceos-01", 50051),
+    target=("198.51.100.11", 50051),
     username="netobs",
     password="netobs123",
-    insecure=True
+    insecure=True,
+    skip_verify=True,
+    timeout = 180
 ) as gc:
 
     result = gc.get(path=paths, encoding='json')

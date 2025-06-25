@@ -2,7 +2,7 @@ from pygnmi.client import gNMIclient, telemetryParser
 import json
 
 with gNMIclient(
-    target=("ceos-01", 50051),
+    target=("198.51.100.11", 50051),
     username="netobs",
     password="netobs123",
     insecure=True
